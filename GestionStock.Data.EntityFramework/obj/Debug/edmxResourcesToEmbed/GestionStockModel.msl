@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GestionStockDataEFStoreContainer" CdmEntityContainer="GestionStock2022Entities">
+    <EntitySetMapping Name="Articulo">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.Articulo">
+        <MappingFragment StoreEntitySet="Articulo">
+          <ScalarProperty Name="IdArticulo" ColumnName="IdArticulo" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArticuloCategoria">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.ArticuloCategoria">
+        <MappingFragment StoreEntitySet="ArticuloCategoria">
+          <ScalarProperty Name="IdArticuloCategoria" ColumnName="IdArticuloCategoria" />
+          <ScalarProperty Name="IdArticulo" ColumnName="IdArticulo" />
+          <ScalarProperty Name="IdCategoria" ColumnName="IdCategoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArticuloMedida">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.ArticuloMedida">
+        <MappingFragment StoreEntitySet="ArticuloMedida">
+          <ScalarProperty Name="IdArticuloMedida" ColumnName="IdArticuloMedida" />
+          <ScalarProperty Name="IdMedida" ColumnName="IdMedida" />
+          <ScalarProperty Name="IdArticulo" ColumnName="IdArticulo" />
+          <ScalarProperty Name="CantidadMinima" ColumnName="CantidadMinima" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArticuloMedidaPosicion">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.ArticuloMedidaPosicion">
+        <MappingFragment StoreEntitySet="ArticuloMedidaPosicion">
+          <ScalarProperty Name="IdArticuloMedidaPosicion" ColumnName="IdArticuloMedidaPosicion" />
+          <ScalarProperty Name="IdArticuloMedida" ColumnName="IdArticuloMedida" />
+          <ScalarProperty Name="IdPosicion" ColumnName="IdPosicion" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoriaRelacion">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.CategoriaRelacion">
+        <MappingFragment StoreEntitySet="CategoriaRelacion">
+          <ScalarProperty Name="IdCategoriaRelacion" ColumnName="IdCategoriaRelacion" />
+          <ScalarProperty Name="IdCategoriaPadre" ColumnName="IdCategoriaPadre" />
+          <ScalarProperty Name="IdCategoriaHijo" ColumnName="IdCategoriaHijo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Catergoria">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.Catergoria">
+        <MappingFragment StoreEntitySet="Catergoria">
+          <ScalarProperty Name="IdCategoria" ColumnName="IdCategoria" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cliente">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.Cliente">
+        <MappingFragment StoreEntitySet="Cliente">
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="Calle" ColumnName="Calle" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FormaPago">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.FormaPago">
+        <MappingFragment StoreEntitySet="FormaPago">
+          <ScalarProperty Name="IdForma" ColumnName="IdForma" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Medida">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.Medida">
+        <MappingFragment StoreEntitySet="Medida">
+          <ScalarProperty Name="IdMedida" ColumnName="IdMedida" />
+          <ScalarProperty Name="IdTipoMedida" ColumnName="IdTipoMedida" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movimiento">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.Movimiento">
+        <MappingFragment StoreEntitySet="Movimiento">
+          <ScalarProperty Name="IdMovimiento" ColumnName="IdMovimiento" />
+          <ScalarProperty Name="IdTipoMovimiento" ColumnName="IdTipoMovimiento" />
+          <ScalarProperty Name="IdArticuloMedida" ColumnName="IdArticuloMedida" />
+          <ScalarProperty Name="IdPosicionOrigen" ColumnName="IdPosicionOrigen" />
+          <ScalarProperty Name="IdProveedorOrigen" ColumnName="IdProveedorOrigen" />
+          <ScalarProperty Name="IdVentaOrigen" ColumnName="IdVentaOrigen" />
+          <ScalarProperty Name="IdPosicionDestino" ColumnName="IdPosicionDestino" />
+          <ScalarProperty Name="IdProveedorDestino" ColumnName="IdProveedorDestino" />
+          <ScalarProperty Name="IdVentaDestino" ColumnName="IdVentaDestino" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Posicion">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.Posicion">
+        <MappingFragment StoreEntitySet="Posicion">
+          <ScalarProperty Name="IdPosicion" ColumnName="IdPosicion" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Proveedor">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.Proveedor">
+        <MappingFragment StoreEntitySet="Proveedor">
+          <ScalarProperty Name="IdProveedor" ColumnName="IdProveedor" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+          <ScalarProperty Name="PlazoEstimadoDeEntrega" ColumnName="PlazoEstimadoDeEntrega" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProveedorArticulo">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.ProveedorArticulo">
+        <MappingFragment StoreEntitySet="ProveedorArticulo">
+          <ScalarProperty Name="IdProveedorArticulo" ColumnName="IdProveedorArticulo" />
+          <ScalarProperty Name="IdProveedor" ColumnName="IdProveedor" />
+          <ScalarProperty Name="IdArticuloMedida" ColumnName="IdArticuloMedida" />
+          <ScalarProperty Name="IdForma" ColumnName="IdForma" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="FechaCompra" ColumnName="FechaCompra" />
+          <ScalarProperty Name="FechaPedido" ColumnName="FechaPedido" />
+          <ScalarProperty Name="Entregado" ColumnName="Entregado" />
+          <ScalarProperty Name="PlazoPactado" ColumnName="PlazoPactado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoMedida">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.TipoMedida">
+        <MappingFragment StoreEntitySet="TipoMedida">
+          <ScalarProperty Name="IdTipoMedida" ColumnName="IdTipoMedida" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoMovimiento">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.TipoMovimiento">
+        <MappingFragment StoreEntitySet="TipoMovimiento">
+          <ScalarProperty Name="IdTipoMovimiento" ColumnName="IdTipoMovimiento" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsuarioAplicacion">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.UsuarioAplicacion">
+        <MappingFragment StoreEntitySet="UsuarioAplicacion">
+          <ScalarProperty Name="IdUsuarioAplicacion" ColumnName="IdUsuarioAplicacion" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="Contrasenia" ColumnName="Contrasenia" />
+          <ScalarProperty Name="Activo" ColumnName="Activo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Venta">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.Venta">
+        <MappingFragment StoreEntitySet="Venta">
+          <ScalarProperty Name="IdVenta" ColumnName="IdVenta" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="IdForma" ColumnName="IdForma" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VentaArticulo">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.VentaArticulo">
+        <MappingFragment StoreEntitySet="VentaArticulo">
+          <ScalarProperty Name="IdVentaArticulo" ColumnName="IdVentaArticulo" />
+          <ScalarProperty Name="IdVenta" ColumnName="IdVenta" />
+          <ScalarProperty Name="IdArticulo" ColumnName="IdArticulo" />
+          <ScalarProperty Name="IdArticuloMedida" ColumnName="IdArticuloMedida" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Monto" ColumnName="Monto" />
+          <ScalarProperty Name="MontoUnitario" ColumnName="MontoUnitario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="GestionStock.Data.EF.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

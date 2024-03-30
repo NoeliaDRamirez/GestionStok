@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock\\GestionStock.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock.Data.EntityFramework\\GestionStock.Data.EntityFramework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock.Data.EntityFramework\\GestionStock.Data.EntityFramework.csproj",
+        "projectName": "GestionStock.Data.EntityFramework",
+        "projectPath": "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock.Data.EntityFramework\\GestionStock.Data.EntityFramework.csproj",
+        "packagesPath": "C:\\Users\\goya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock.Data.EntityFramework\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\goya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock.Data\\GestionStock.Data.csproj": {
+                "projectPath": "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock.Data\\GestionStock.Data.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock.Data\\GestionStock.Data.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock.Data\\GestionStock.Data.csproj",
+        "projectName": "GestionStock.Data",
+        "projectPath": "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock.Data\\GestionStock.Data.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock\\GestionStock.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock\\GestionStock.csproj",
+        "projectName": "GestionStock",
+        "projectPath": "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock\\GestionStock.csproj",
+        "packagesPath": "C:\\Users\\goya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\goya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock.Data.EntityFramework\\GestionStock.Data.EntityFramework.csproj": {
+                "projectPath": "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock.Data.EntityFramework\\GestionStock.Data.EntityFramework.csproj"
+              },
+              "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock.Data\\GestionStock.Data.csproj": {
+                "projectPath": "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock.Data\\GestionStock.Data.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6zut84cc+sNWHtD6fLpk/5HA/Wbn0K2y9DLui9Q69xiQdp18kMqjd2iNMBldbSWqbXOravB4YAylGJNwKeYTXg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\goya\\Documents\\Programacion\\3 Tercer Cuatrimestre\\Laboratorio III\\GestionStock\\GestionStock.Data.EntityFramework\\GestionStock.Data.EntityFramework.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\goya\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

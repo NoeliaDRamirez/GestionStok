@@ -1,0 +1,113 @@
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\bin\Debug\GestionStock.exe.config
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\bin\Debug\GestionStock.exe
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\bin\Debug\GestionStock.pdb
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\bin\Debug\GestionStock.Data.ADO.dll
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\bin\Debug\GestionStock.Data.ADO.pdb
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.AssemblyReference.cache
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\obj\Debug\GestionStock.Form1.resources
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\obj\Debug\GestionStock.Properties.Resources.resources
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.GenerateResource.cache
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.CoreCompileInputs.cache
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.CopyComplete
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\obj\Debug\GestionStock.exe
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\obj\Debug\GestionStock.pdb
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\bin\Debug\EntityFramework.SqlServer.dll
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\bin\Debug\EntityFramework.dll
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\bin\Debug\GestionStock.Data.EntityFramework.dll
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\bin\Debug\GestionStock.Data.EntityFramework.pdb
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\bin\Debug\GestionStock.Data.EntityFramework.dll.config
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\bin\Debug\GestionStock.Data.dll
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\bin\Debug\GestionStock.Data.pdb
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\obj\Debug\GestionStock.frmArticulo.resources
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\obj\Debug\GestionStock.frmCatergoria.resources
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock\obj\Debug\GestionStock.Principal.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\bin\Debug\GestionStock.exe.config
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\bin\Debug\GestionStock.exe
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\bin\Debug\GestionStock.pdb
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\bin\Debug\EntityFramework.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\bin\Debug\GestionStock.Data.ADO.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\bin\Debug\GestionStock.Data.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\bin\Debug\GestionStock.Data.EntityFramework.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\bin\Debug\GestionStock.Data.ADO.pdb
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\bin\Debug\GestionStock.Data.EntityFramework.pdb
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\bin\Debug\GestionStock.Data.EntityFramework.dll.config
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\bin\Debug\GestionStock.Data.pdb
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.AssemblyReference.cache
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.SuggestedBindingRedirects.cache
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\obj\Debug\GestionStock.Form1.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\obj\Debug\GestionStock.frmCatergoria.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\obj\Debug\GestionStock.frmArticulo.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\obj\Debug\GestionStock.Principal.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\obj\Debug\GestionStock.Properties.Resources.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.GenerateResource.cache
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.CoreCompileInputs.cache
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.CopyComplete
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\obj\Debug\GestionStock.exe
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock\obj\Debug\GestionStock.pdb
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\GestionStock.exe.config
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\GestionStock.exe
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\GestionStock.pdb
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\EntityFramework.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\GestionStock.Data.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\GestionStock.Data.EntityFramework.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\GestionStock.Data.EntityFramework.pdb
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\GestionStock.Data.EntityFramework.dll.config
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\GestionStock.Data.pdb
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.AssemblyReference.cache
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.SuggestedBindingRedirects.cache
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmCatergoria.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmArticulo.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmCliente.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.Principal.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.Properties.Resources.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.GenerateResource.cache
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.CoreCompileInputs.cache
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.CopyComplete
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.exe
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.pdb
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmFormaPago.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmMedida.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmTipoMedida.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmPosicion.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmVenta.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmTipoMovimiento.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmArticuloMedida.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmProveedor.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmVentaArticulo.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmMovimiento.resources
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmProveedorArticulo.resources
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\GestionStock.exe.config
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\GestionStock.exe
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\GestionStock.pdb
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\EntityFramework.dll
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\GestionStock.Data.dll
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\GestionStock.Data.EntityFramework.dll
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\GestionStock.Data.EntityFramework.pdb
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\GestionStock.Data.EntityFramework.dll.config
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\bin\Debug\GestionStock.Data.pdb
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.AssemblyReference.cache
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.SuggestedBindingRedirects.cache
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmArticulo.resources
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmArticuloMedida.resources
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmCatergoria.resources
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmCliente.resources
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmFormaPago.resources
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmMedida.resources
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmMovimiento.resources
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmPosicion.resources
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmProveedor.resources
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmProveedorArticulo.resources
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmTipoMedida.resources
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmTipoMovimiento.resources
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmVenta.resources
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.frmVentaArticulo.resources
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.Principal.resources
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.Properties.Resources.resources
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.GenerateResource.cache
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.CoreCompileInputs.cache
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.csproj.CopyComplete
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.exe
+C:\Users\goya\Documents\Programacion\3 Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock\obj\Debug\GestionStock.pdb

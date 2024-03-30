@@ -1,0 +1,36 @@
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\GestionStock.Data.EntityFramework.dll.config
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\GestionStock.Data.EntityFramework.dll
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\GestionStock.Data.EntityFramework.pdb
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\EntityFramework.dll
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data.EntityFramework\obj\Debug\GestionStock.Data.EntityFramework.csproj.AssemblyReference.cache
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data.EntityFramework\obj\Debug\GestionStock.Data.EntityFramework.csproj.CoreCompileInputs.cache
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data.EntityFramework\obj\Debug\GestionStock.Data.EntityFramework.csproj.CopyComplete
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data.EntityFramework\obj\Debug\GestionStock.Data.EntityFramework.dll
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data.EntityFramework\obj\Debug\GestionStock.Data.EntityFramework.pdb
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\GestionStock.Data.dll
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\GestionStock.Data.pdb
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\GestionStock.Data.EntityFramework.dll.config
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\GestionStock.Data.EntityFramework.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\GestionStock.Data.EntityFramework.pdb
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\EntityFramework.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\GestionStock.Data.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\GestionStock.Data.pdb
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock.Data.EntityFramework\obj\Debug\GestionStock.Data.EntityFramework.csproj.AssemblyReference.cache
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock.Data.EntityFramework\obj\Debug\GestionStock.Data.EntityFramework.csproj.CoreCompileInputs.cache
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock.Data.EntityFramework\obj\Debug\GestionStock.Data.EntityFramework.csproj.CopyComplete
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock.Data.EntityFramework\obj\Debug\GestionStock.Data.EntityFramework.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\Clase 12\GestionStock\GestionStock.Data.EntityFramework\obj\Debug\GestionStock.Data.EntityFramework.pdb
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\GestionStock.Data.EntityFramework.dll.config
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\GestionStock.Data.EntityFramework.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\GestionStock.Data.EntityFramework.pdb
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\EntityFramework.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\GestionStock.Data.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data.EntityFramework\bin\Debug\GestionStock.Data.pdb
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data.EntityFramework\obj\Debug\GestionStock.Data.EntityFramework.csproj.AssemblyReference.cache
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data.EntityFramework\obj\Debug\GestionStock.Data.EntityFramework.csproj.CoreCompileInputs.cache
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data.EntityFramework\obj\Debug\GestionStock.Data.EntityFramework.csproj.CopyComplete
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data.EntityFramework\obj\Debug\GestionStock.Data.EntityFramework.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data.EntityFramework\obj\Debug\GestionStock.Data.EntityFramework.pdb

@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86EB1C29-C0D8-479C-BA65-CBAC77D4BE26}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GestionStock.Data.EntityFramework</RootNamespace>
+    <AssemblyName>GestionStock.Data.EntityFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Articulo.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloCategoria.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloMedida.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloMedidaPosicion.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CategoriaRelacion.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Catergoria.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Articulo.cs" />
+    <Compile Include="Entidades\ArticuloCategoria.cs" />
+    <Compile Include="Entidades\ArticuloMedida.cs" />
+    <Compile Include="Entidades\ArticuloMedidaPosicion.cs" />
+    <Compile Include="Entidades\CategoriaRelacion.cs" />
+    <Compile Include="Entidades\Catergoria.cs" />
+    <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\FormaPago.cs" />
+    <Compile Include="Entidades\Medida.cs" />
+    <Compile Include="Entidades\Movimiento.cs" />
+    <Compile Include="Entidades\Posicion.cs" />
+    <Compile Include="Entidades\Proveedor.cs" />
+    <Compile Include="Entidades\ProveedorArticulo.cs" />
+    <Compile Include="Entidades\TipoMedida.cs" />
+    <Compile Include="Entidades\TipoMovimiento.cs" />
+    <Compile Include="Entidades\Venta.cs" />
+    <Compile Include="Entidades\VentaArticulo.cs" />
+    <Compile Include="Filtros\FiltroArticulo.cs" />
+    <Compile Include="Filtros\FiltroArticuloCategoria.cs" />
+    <Compile Include="Filtros\FiltroArticuloMedida.cs" />
+    <Compile Include="Filtros\FiltroArticuloMedidaPosicion.cs" />
+    <Compile Include="Filtros\FiltroBase.cs" />
+    <Compile Include="Filtros\FiltroCategoriaRelacion.cs" />
+    <Compile Include="Filtros\FiltroCategoria.cs" />
+    <Compile Include="Filtros\FiltroCliente.cs" />
+    <Compile Include="Filtros\FiltroFormaPago.cs" />
+    <Compile Include="Filtros\FiltroMedida.cs" />
+    <Compile Include="Filtros\FiltroMovimiento.cs" />
+    <Compile Include="Filtros\FiltroPosicion.cs" />
+    <Compile Include="Filtros\FiltroProveedor.cs" />
+    <Compile Include="Filtros\FiltroProveedorArticulo.cs" />
+    <Compile Include="Filtros\FiltroTipoMedida.cs" />
+    <Compile Include="Filtros\FiltroTipoMovimiento.cs" />
+    <Compile Include="Filtros\FiltroVenta.cs" />
+    <Compile Include="Filtros\FiltroVentaArticulo.cs" />
+    <Compile Include="FormaPago.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GestionStockModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GestionStockModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GestionStockModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GestionStockModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GestionStockModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Medida.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Movimiento.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Posicion.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedor.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedorArticulo.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositorio.cs" />
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoMedida.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TipoMovimiento.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioAplicacion.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Venta.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VentaArticulo.cs">
+      <DependentUpon>GestionStockModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="GestionStockModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GestionStockModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="GestionStockModel.edmx.diagram">
+      <DependentUpon>GestionStockModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GestionStockModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GestionStockModel.edmx</DependentUpon>
+      <LastGenOutput>GestionStockModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="GestionStockModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GestionStockModel.edmx</DependentUpon>
+      <LastGenOutput>GestionStockModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.2.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GestionStock.Data\GestionStock.Data.csproj">
+      <Project>{db6e6a35-3c13-4430-b394-30b2e051b385}</Project>
+      <Name>GestionStock.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

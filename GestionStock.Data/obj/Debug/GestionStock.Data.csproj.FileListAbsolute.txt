@@ -1,0 +1,12 @@
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data\bin\Debug\GestionStock.Data.dll
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data\bin\Debug\GestionStock.Data.pdb
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data\obj\Debug\GestionStock.Data.csproj.AssemblyReference.cache
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data\obj\Debug\GestionStock.Data.csproj.CoreCompileInputs.cache
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data\obj\Debug\GestionStock.Data.dll
+G:\Facultad\2022\TPIII\GestionStock\GestionStock\GestionStock.Data\obj\Debug\GestionStock.Data.pdb
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data\bin\Debug\GestionStock.Data.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data\bin\Debug\GestionStock.Data.pdb
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data\obj\Debug\GestionStock.Data.csproj.AssemblyReference.cache
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data\obj\Debug\GestionStock.Data.csproj.CoreCompileInputs.cache
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data\obj\Debug\GestionStock.Data.dll
+C:\Users\goya\Documents\Programacion\Tercer Cuatrimestre\Laboratorio III\GestionStock\GestionStock.Data\obj\Debug\GestionStock.Data.pdb

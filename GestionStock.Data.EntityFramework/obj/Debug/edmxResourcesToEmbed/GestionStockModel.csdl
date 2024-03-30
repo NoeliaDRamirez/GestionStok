@@ -1,0 +1,668 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GestionStock.Data.EF" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Articulo">
+    <Key>
+      <PropertyRef Name="IdArticulo" />
+    </Key>
+    <Property Name="IdArticulo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codigo" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ArticuloCategoria" Relationship="Self.FK_ArticuloCategoria_Articulo" FromRole="Articulo" ToRole="ArticuloCategoria" />
+    <NavigationProperty Name="ArticuloMedida" Relationship="Self.FK_ArticuloMedida_Articulo" FromRole="Articulo" ToRole="ArticuloMedida" />
+    <NavigationProperty Name="VentaArticulo" Relationship="Self.FK_VentaArticulo_Articulo" FromRole="Articulo" ToRole="VentaArticulo" />
+  </EntityType>
+  <EntityType Name="ArticuloCategoria">
+    <Key>
+      <PropertyRef Name="IdArticuloCategoria" />
+    </Key>
+    <Property Name="IdArticuloCategoria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdArticulo" Type="Int32" Nullable="false" />
+    <Property Name="IdCategoria" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Articulo" Relationship="Self.FK_ArticuloCategoria_Articulo" FromRole="ArticuloCategoria" ToRole="Articulo" />
+    <NavigationProperty Name="Catergoria" Relationship="Self.FK_ArticuloCategoria_Catergoria" FromRole="ArticuloCategoria" ToRole="Catergoria" />
+  </EntityType>
+  <EntityType Name="ArticuloMedida">
+    <Key>
+      <PropertyRef Name="IdArticuloMedida" />
+    </Key>
+    <Property Name="IdArticuloMedida" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdMedida" Type="Int32" Nullable="false" />
+    <Property Name="IdArticulo" Type="Int32" Nullable="false" />
+    <Property Name="CantidadMinima" Type="Int32" />
+    <NavigationProperty Name="Articulo" Relationship="Self.FK_ArticuloMedida_Articulo" FromRole="ArticuloMedida" ToRole="Articulo" />
+    <NavigationProperty Name="Medida" Relationship="Self.FK_ArticuloMedida_Medida" FromRole="ArticuloMedida" ToRole="Medida" />
+    <NavigationProperty Name="ArticuloMedidaPosicion" Relationship="Self.FK_ArticuloMedidaPosicion_ArticuloMedida" FromRole="ArticuloMedida" ToRole="ArticuloMedidaPosicion" />
+    <NavigationProperty Name="Movimiento" Relationship="Self.FK_Movimiento_ArticuloMedida" FromRole="ArticuloMedida" ToRole="Movimiento" />
+    <NavigationProperty Name="ProveedorArticulo" Relationship="Self.FK_ProveedorArticulo_ArticuloMedida" FromRole="ArticuloMedida" ToRole="ProveedorArticulo" />
+    <NavigationProperty Name="VentaArticulo" Relationship="Self.FK_VentaArticulo_ArticuloMedida" FromRole="ArticuloMedida" ToRole="VentaArticulo" />
+  </EntityType>
+  <EntityType Name="ArticuloMedidaPosicion">
+    <Key>
+      <PropertyRef Name="IdArticuloMedidaPosicion" />
+    </Key>
+    <Property Name="IdArticuloMedidaPosicion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdArticuloMedida" Type="Int32" Nullable="false" />
+    <Property Name="IdPosicion" Type="Int32" Nullable="false" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ArticuloMedida" Relationship="Self.FK_ArticuloMedidaPosicion_ArticuloMedida" FromRole="ArticuloMedidaPosicion" ToRole="ArticuloMedida" />
+    <NavigationProperty Name="Posicion" Relationship="Self.FK_ArticuloMedidaPosicion_Posicion" FromRole="ArticuloMedidaPosicion" ToRole="Posicion" />
+  </EntityType>
+  <EntityType Name="CategoriaRelacion">
+    <Key>
+      <PropertyRef Name="IdCategoriaRelacion" />
+    </Key>
+    <Property Name="IdCategoriaRelacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdCategoriaPadre" Type="Int32" Nullable="false" />
+    <Property Name="IdCategoriaHijo" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Catergoria" Relationship="Self.FK_CategoriaRelacion_CatergoriaHijo" FromRole="CategoriaRelacion" ToRole="Catergoria" />
+    <NavigationProperty Name="Catergoria1" Relationship="Self.FK_CategoriaRelacion_CatergoriaPadre" FromRole="CategoriaRelacion" ToRole="Catergoria" />
+  </EntityType>
+  <EntityType Name="Catergoria">
+    <Key>
+      <PropertyRef Name="IdCategoria" />
+    </Key>
+    <Property Name="IdCategoria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Codigo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ArticuloCategoria" Relationship="Self.FK_ArticuloCategoria_Catergoria" FromRole="Catergoria" ToRole="ArticuloCategoria" />
+    <NavigationProperty Name="CategoriaRelacion" Relationship="Self.FK_CategoriaRelacion_CatergoriaHijo" FromRole="Catergoria" ToRole="CategoriaRelacion" />
+    <NavigationProperty Name="CategoriaRelacion1" Relationship="Self.FK_CategoriaRelacion_CatergoriaPadre" FromRole="Catergoria" ToRole="CategoriaRelacion" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="IdCliente" />
+    </Key>
+    <Property Name="IdCliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Apellido" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Documento" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Calle" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Numero" Type="Int32" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Observaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Venta" Relationship="Self.FK_Venta_Cliente" FromRole="Cliente" ToRole="Venta" />
+  </EntityType>
+  <EntityType Name="FormaPago">
+    <Key>
+      <PropertyRef Name="IdForma" />
+    </Key>
+    <Property Name="IdForma" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Codigo" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="7" />
+    <NavigationProperty Name="ProveedorArticulo" Relationship="Self.FK_ProveedorArticulo_FormaPago" FromRole="FormaPago" ToRole="ProveedorArticulo" />
+    <NavigationProperty Name="Venta" Relationship="Self.FK_Venta_FormaPago" FromRole="FormaPago" ToRole="Venta" />
+  </EntityType>
+  <EntityType Name="Medida">
+    <Key>
+      <PropertyRef Name="IdMedida" />
+    </Key>
+    <Property Name="IdMedida" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdTipoMedida" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Codigo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ArticuloMedida" Relationship="Self.FK_ArticuloMedida_Medida" FromRole="Medida" ToRole="ArticuloMedida" />
+    <NavigationProperty Name="TipoMedida" Relationship="Self.FK_Medida_TipoMedida" FromRole="Medida" ToRole="TipoMedida" />
+  </EntityType>
+  <EntityType Name="Movimiento">
+    <Key>
+      <PropertyRef Name="IdMovimiento" />
+    </Key>
+    <Property Name="IdMovimiento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdTipoMovimiento" Type="Int32" Nullable="false" />
+    <Property Name="IdArticuloMedida" Type="Int32" Nullable="false" />
+    <Property Name="IdPosicionOrigen" Type="Int32" />
+    <Property Name="IdProveedorOrigen" Type="Int32" />
+    <Property Name="IdVentaOrigen" Type="Int32" />
+    <Property Name="IdPosicionDestino" Type="Int32" />
+    <Property Name="IdProveedorDestino" Type="Int32" />
+    <Property Name="IdVentaDestino" Type="Int32" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="7" />
+    <NavigationProperty Name="ArticuloMedida" Relationship="Self.FK_Movimiento_ArticuloMedida" FromRole="Movimiento" ToRole="ArticuloMedida" />
+    <NavigationProperty Name="Posicion" Relationship="Self.FK_Movimiento_Posicion" FromRole="Movimiento" ToRole="Posicion" />
+    <NavigationProperty Name="Posicion1" Relationship="Self.FK_Movimiento_PosicionOrigen" FromRole="Movimiento" ToRole="Posicion" />
+    <NavigationProperty Name="Proveedor" Relationship="Self.FK_Movimiento_ProveedorDestino" FromRole="Movimiento" ToRole="Proveedor" />
+    <NavigationProperty Name="Proveedor1" Relationship="Self.FK_Movimiento_ProveedorOrigen" FromRole="Movimiento" ToRole="Proveedor" />
+    <NavigationProperty Name="TipoMovimiento" Relationship="Self.FK_Movimiento_TipoMovimiento" FromRole="Movimiento" ToRole="TipoMovimiento" />
+    <NavigationProperty Name="Venta" Relationship="Self.FK_Movimiento_VentaDestino" FromRole="Movimiento" ToRole="Venta" />
+    <NavigationProperty Name="Venta1" Relationship="Self.FK_Movimiento_VentaOrigen" FromRole="Movimiento" ToRole="Venta" />
+  </EntityType>
+  <EntityType Name="Posicion">
+    <Key>
+      <PropertyRef Name="IdPosicion" />
+    </Key>
+    <Property Name="IdPosicion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Codigo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ArticuloMedidaPosicion" Relationship="Self.FK_ArticuloMedidaPosicion_Posicion" FromRole="Posicion" ToRole="ArticuloMedidaPosicion" />
+    <NavigationProperty Name="Movimiento" Relationship="Self.FK_Movimiento_Posicion" FromRole="Posicion" ToRole="Movimiento" />
+    <NavigationProperty Name="Movimiento1" Relationship="Self.FK_Movimiento_PosicionOrigen" FromRole="Posicion" ToRole="Movimiento" />
+  </EntityType>
+  <EntityType Name="Proveedor">
+    <Key>
+      <PropertyRef Name="IdProveedor" />
+    </Key>
+    <Property Name="IdProveedor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Codigo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+    <Property Name="PlazoEstimadoDeEntrega" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Movimiento" Relationship="Self.FK_Movimiento_ProveedorDestino" FromRole="Proveedor" ToRole="Movimiento" />
+    <NavigationProperty Name="Movimiento1" Relationship="Self.FK_Movimiento_ProveedorOrigen" FromRole="Proveedor" ToRole="Movimiento" />
+    <NavigationProperty Name="ProveedorArticulo" Relationship="Self.FK_ProveedorArticulo_Proveedor" FromRole="Proveedor" ToRole="ProveedorArticulo" />
+  </EntityType>
+  <EntityType Name="ProveedorArticulo">
+    <Key>
+      <PropertyRef Name="IdProveedorArticulo" />
+    </Key>
+    <Property Name="IdProveedorArticulo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdProveedor" Type="Int32" Nullable="false" />
+    <Property Name="IdArticuloMedida" Type="Int32" Nullable="false" />
+    <Property Name="IdForma" Type="Int32" Nullable="false" />
+    <Property Name="Precio" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="FechaCompra" Type="DateTime" Precision="7" />
+    <Property Name="FechaPedido" Type="DateTime" Precision="7" />
+    <Property Name="Entregado" Type="Boolean" />
+    <Property Name="PlazoPactado" Type="Int32" />
+    <NavigationProperty Name="ArticuloMedida" Relationship="Self.FK_ProveedorArticulo_ArticuloMedida" FromRole="ProveedorArticulo" ToRole="ArticuloMedida" />
+    <NavigationProperty Name="FormaPago" Relationship="Self.FK_ProveedorArticulo_FormaPago" FromRole="ProveedorArticulo" ToRole="FormaPago" />
+    <NavigationProperty Name="Proveedor" Relationship="Self.FK_ProveedorArticulo_Proveedor" FromRole="ProveedorArticulo" ToRole="Proveedor" />
+  </EntityType>
+  <EntityType Name="TipoMedida">
+    <Key>
+      <PropertyRef Name="IdTipoMedida" />
+    </Key>
+    <Property Name="IdTipoMedida" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Codigo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Medida" Relationship="Self.FK_Medida_TipoMedida" FromRole="TipoMedida" ToRole="Medida" />
+  </EntityType>
+  <EntityType Name="TipoMovimiento">
+    <Key>
+      <PropertyRef Name="IdTipoMovimiento" />
+    </Key>
+    <Property Name="IdTipoMovimiento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="64" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Codigo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Movimiento" Relationship="Self.FK_Movimiento_TipoMovimiento" FromRole="TipoMovimiento" ToRole="Movimiento" />
+  </EntityType>
+  <EntityType Name="UsuarioAplicacion">
+    <Key>
+      <PropertyRef Name="IdUsuarioAplicacion" />
+    </Key>
+    <Property Name="IdUsuarioAplicacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreUsuario" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Contrasenia" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Activo" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Venta">
+    <Key>
+      <PropertyRef Name="IdVenta" />
+    </Key>
+    <Property Name="IdVenta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdCliente" Type="Int32" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Monto" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="IdForma" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cliente" Relationship="Self.FK_Venta_Cliente" FromRole="Venta" ToRole="Cliente" />
+    <NavigationProperty Name="FormaPago" Relationship="Self.FK_Venta_FormaPago" FromRole="Venta" ToRole="FormaPago" />
+    <NavigationProperty Name="Movimiento" Relationship="Self.FK_Movimiento_VentaDestino" FromRole="Venta" ToRole="Movimiento" />
+    <NavigationProperty Name="Movimiento1" Relationship="Self.FK_Movimiento_VentaOrigen" FromRole="Venta" ToRole="Movimiento" />
+    <NavigationProperty Name="VentaArticulo" Relationship="Self.FK_VentaArticulo_Venta" FromRole="Venta" ToRole="VentaArticulo" />
+  </EntityType>
+  <EntityType Name="VentaArticulo">
+    <Key>
+      <PropertyRef Name="IdVentaArticulo" />
+    </Key>
+    <Property Name="IdVentaArticulo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdVenta" Type="Int32" Nullable="false" />
+    <Property Name="IdArticulo" Type="Int32" Nullable="false" />
+    <Property Name="IdArticuloMedida" Type="Int32" Nullable="false" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="Monto" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="MontoUnitario" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="Articulo" Relationship="Self.FK_VentaArticulo_Articulo" FromRole="VentaArticulo" ToRole="Articulo" />
+    <NavigationProperty Name="ArticuloMedida" Relationship="Self.FK_VentaArticulo_ArticuloMedida" FromRole="VentaArticulo" ToRole="ArticuloMedida" />
+    <NavigationProperty Name="Venta" Relationship="Self.FK_VentaArticulo_Venta" FromRole="VentaArticulo" ToRole="Venta" />
+  </EntityType>
+  <Association Name="FK_ArticuloCategoria_Articulo">
+    <End Role="Articulo" Type="Self.Articulo" Multiplicity="1" />
+    <End Role="ArticuloCategoria" Type="Self.ArticuloCategoria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="IdArticulo" />
+      </Principal>
+      <Dependent Role="ArticuloCategoria">
+        <PropertyRef Name="IdArticulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticuloMedida_Articulo">
+    <End Role="Articulo" Type="Self.Articulo" Multiplicity="1" />
+    <End Role="ArticuloMedida" Type="Self.ArticuloMedida" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="IdArticulo" />
+      </Principal>
+      <Dependent Role="ArticuloMedida">
+        <PropertyRef Name="IdArticulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VentaArticulo_Articulo">
+    <End Role="Articulo" Type="Self.Articulo" Multiplicity="1" />
+    <End Role="VentaArticulo" Type="Self.VentaArticulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="IdArticulo" />
+      </Principal>
+      <Dependent Role="VentaArticulo">
+        <PropertyRef Name="IdArticulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticuloCategoria_Catergoria">
+    <End Role="Catergoria" Type="Self.Catergoria" Multiplicity="1" />
+    <End Role="ArticuloCategoria" Type="Self.ArticuloCategoria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catergoria">
+        <PropertyRef Name="IdCategoria" />
+      </Principal>
+      <Dependent Role="ArticuloCategoria">
+        <PropertyRef Name="IdCategoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticuloMedida_Medida">
+    <End Role="Medida" Type="Self.Medida" Multiplicity="1" />
+    <End Role="ArticuloMedida" Type="Self.ArticuloMedida" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Medida">
+        <PropertyRef Name="IdMedida" />
+      </Principal>
+      <Dependent Role="ArticuloMedida">
+        <PropertyRef Name="IdMedida" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticuloMedidaPosicion_ArticuloMedida">
+    <End Role="ArticuloMedida" Type="Self.ArticuloMedida" Multiplicity="1" />
+    <End Role="ArticuloMedidaPosicion" Type="Self.ArticuloMedidaPosicion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ArticuloMedida">
+        <PropertyRef Name="IdArticuloMedida" />
+      </Principal>
+      <Dependent Role="ArticuloMedidaPosicion">
+        <PropertyRef Name="IdArticuloMedida" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movimiento_ArticuloMedida">
+    <End Role="ArticuloMedida" Type="Self.ArticuloMedida" Multiplicity="1" />
+    <End Role="Movimiento" Type="Self.Movimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ArticuloMedida">
+        <PropertyRef Name="IdArticuloMedida" />
+      </Principal>
+      <Dependent Role="Movimiento">
+        <PropertyRef Name="IdArticuloMedida" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProveedorArticulo_ArticuloMedida">
+    <End Role="ArticuloMedida" Type="Self.ArticuloMedida" Multiplicity="1" />
+    <End Role="ProveedorArticulo" Type="Self.ProveedorArticulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ArticuloMedida">
+        <PropertyRef Name="IdArticuloMedida" />
+      </Principal>
+      <Dependent Role="ProveedorArticulo">
+        <PropertyRef Name="IdArticuloMedida" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VentaArticulo_ArticuloMedida">
+    <End Role="ArticuloMedida" Type="Self.ArticuloMedida" Multiplicity="1" />
+    <End Role="VentaArticulo" Type="Self.VentaArticulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ArticuloMedida">
+        <PropertyRef Name="IdArticuloMedida" />
+      </Principal>
+      <Dependent Role="VentaArticulo">
+        <PropertyRef Name="IdArticuloMedida" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ArticuloMedidaPosicion_Posicion">
+    <End Role="Posicion" Type="Self.Posicion" Multiplicity="1" />
+    <End Role="ArticuloMedidaPosicion" Type="Self.ArticuloMedidaPosicion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Posicion">
+        <PropertyRef Name="IdPosicion" />
+      </Principal>
+      <Dependent Role="ArticuloMedidaPosicion">
+        <PropertyRef Name="IdPosicion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoriaRelacion_CatergoriaHijo">
+    <End Role="Catergoria" Type="Self.Catergoria" Multiplicity="1" />
+    <End Role="CategoriaRelacion" Type="Self.CategoriaRelacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catergoria">
+        <PropertyRef Name="IdCategoria" />
+      </Principal>
+      <Dependent Role="CategoriaRelacion">
+        <PropertyRef Name="IdCategoriaHijo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoriaRelacion_CatergoriaPadre">
+    <End Role="Catergoria" Type="Self.Catergoria" Multiplicity="1" />
+    <End Role="CategoriaRelacion" Type="Self.CategoriaRelacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Catergoria">
+        <PropertyRef Name="IdCategoria" />
+      </Principal>
+      <Dependent Role="CategoriaRelacion">
+        <PropertyRef Name="IdCategoriaPadre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Venta_Cliente">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="Venta" Type="Self.Venta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="IdCliente" />
+      </Principal>
+      <Dependent Role="Venta">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProveedorArticulo_FormaPago">
+    <End Role="FormaPago" Type="Self.FormaPago" Multiplicity="1" />
+    <End Role="ProveedorArticulo" Type="Self.ProveedorArticulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FormaPago">
+        <PropertyRef Name="IdForma" />
+      </Principal>
+      <Dependent Role="ProveedorArticulo">
+        <PropertyRef Name="IdForma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Venta_FormaPago">
+    <End Role="FormaPago" Type="Self.FormaPago" Multiplicity="1" />
+    <End Role="Venta" Type="Self.Venta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FormaPago">
+        <PropertyRef Name="IdForma" />
+      </Principal>
+      <Dependent Role="Venta">
+        <PropertyRef Name="IdForma" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Medida_TipoMedida">
+    <End Role="TipoMedida" Type="Self.TipoMedida" Multiplicity="1" />
+    <End Role="Medida" Type="Self.Medida" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoMedida">
+        <PropertyRef Name="IdTipoMedida" />
+      </Principal>
+      <Dependent Role="Medida">
+        <PropertyRef Name="IdTipoMedida" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movimiento_Posicion">
+    <End Role="Posicion" Type="Self.Posicion" Multiplicity="0..1" />
+    <End Role="Movimiento" Type="Self.Movimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Posicion">
+        <PropertyRef Name="IdPosicion" />
+      </Principal>
+      <Dependent Role="Movimiento">
+        <PropertyRef Name="IdPosicionDestino" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movimiento_PosicionOrigen">
+    <End Role="Posicion" Type="Self.Posicion" Multiplicity="0..1" />
+    <End Role="Movimiento" Type="Self.Movimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Posicion">
+        <PropertyRef Name="IdPosicion" />
+      </Principal>
+      <Dependent Role="Movimiento">
+        <PropertyRef Name="IdPosicionOrigen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movimiento_ProveedorDestino">
+    <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="0..1" />
+    <End Role="Movimiento" Type="Self.Movimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Proveedor">
+        <PropertyRef Name="IdProveedor" />
+      </Principal>
+      <Dependent Role="Movimiento">
+        <PropertyRef Name="IdProveedorDestino" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movimiento_ProveedorOrigen">
+    <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="0..1" />
+    <End Role="Movimiento" Type="Self.Movimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Proveedor">
+        <PropertyRef Name="IdProveedor" />
+      </Principal>
+      <Dependent Role="Movimiento">
+        <PropertyRef Name="IdProveedorOrigen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movimiento_TipoMovimiento">
+    <End Role="TipoMovimiento" Type="Self.TipoMovimiento" Multiplicity="1" />
+    <End Role="Movimiento" Type="Self.Movimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoMovimiento">
+        <PropertyRef Name="IdTipoMovimiento" />
+      </Principal>
+      <Dependent Role="Movimiento">
+        <PropertyRef Name="IdTipoMovimiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movimiento_VentaDestino">
+    <End Role="Venta" Type="Self.Venta" Multiplicity="0..1" />
+    <End Role="Movimiento" Type="Self.Movimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Venta">
+        <PropertyRef Name="IdVenta" />
+      </Principal>
+      <Dependent Role="Movimiento">
+        <PropertyRef Name="IdVentaDestino" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movimiento_VentaOrigen">
+    <End Role="Venta" Type="Self.Venta" Multiplicity="0..1" />
+    <End Role="Movimiento" Type="Self.Movimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Venta">
+        <PropertyRef Name="IdVenta" />
+      </Principal>
+      <Dependent Role="Movimiento">
+        <PropertyRef Name="IdVentaOrigen" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProveedorArticulo_Proveedor">
+    <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
+    <End Role="ProveedorArticulo" Type="Self.ProveedorArticulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Proveedor">
+        <PropertyRef Name="IdProveedor" />
+      </Principal>
+      <Dependent Role="ProveedorArticulo">
+        <PropertyRef Name="IdProveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VentaArticulo_Venta">
+    <End Role="Venta" Type="Self.Venta" Multiplicity="1" />
+    <End Role="VentaArticulo" Type="Self.VentaArticulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Venta">
+        <PropertyRef Name="IdVenta" />
+      </Principal>
+      <Dependent Role="VentaArticulo">
+        <PropertyRef Name="IdVenta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GestionStock2022Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Articulo" EntityType="Self.Articulo" />
+    <EntitySet Name="ArticuloCategoria" EntityType="Self.ArticuloCategoria" />
+    <EntitySet Name="ArticuloMedida" EntityType="Self.ArticuloMedida" />
+    <EntitySet Name="ArticuloMedidaPosicion" EntityType="Self.ArticuloMedidaPosicion" />
+    <EntitySet Name="CategoriaRelacion" EntityType="Self.CategoriaRelacion" />
+    <EntitySet Name="Catergoria" EntityType="Self.Catergoria" />
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" />
+    <EntitySet Name="FormaPago" EntityType="Self.FormaPago" />
+    <EntitySet Name="Medida" EntityType="Self.Medida" />
+    <EntitySet Name="Movimiento" EntityType="Self.Movimiento" />
+    <EntitySet Name="Posicion" EntityType="Self.Posicion" />
+    <EntitySet Name="Proveedor" EntityType="Self.Proveedor" />
+    <EntitySet Name="ProveedorArticulo" EntityType="Self.ProveedorArticulo" />
+    <EntitySet Name="TipoMedida" EntityType="Self.TipoMedida" />
+    <EntitySet Name="TipoMovimiento" EntityType="Self.TipoMovimiento" />
+    <EntitySet Name="UsuarioAplicacion" EntityType="Self.UsuarioAplicacion" />
+    <EntitySet Name="Venta" EntityType="Self.Venta" />
+    <EntitySet Name="VentaArticulo" EntityType="Self.VentaArticulo" />
+    <AssociationSet Name="FK_ArticuloCategoria_Articulo" Association="Self.FK_ArticuloCategoria_Articulo">
+      <End Role="Articulo" EntitySet="Articulo" />
+      <End Role="ArticuloCategoria" EntitySet="ArticuloCategoria" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticuloMedida_Articulo" Association="Self.FK_ArticuloMedida_Articulo">
+      <End Role="Articulo" EntitySet="Articulo" />
+      <End Role="ArticuloMedida" EntitySet="ArticuloMedida" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VentaArticulo_Articulo" Association="Self.FK_VentaArticulo_Articulo">
+      <End Role="Articulo" EntitySet="Articulo" />
+      <End Role="VentaArticulo" EntitySet="VentaArticulo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticuloCategoria_Catergoria" Association="Self.FK_ArticuloCategoria_Catergoria">
+      <End Role="Catergoria" EntitySet="Catergoria" />
+      <End Role="ArticuloCategoria" EntitySet="ArticuloCategoria" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticuloMedida_Medida" Association="Self.FK_ArticuloMedida_Medida">
+      <End Role="Medida" EntitySet="Medida" />
+      <End Role="ArticuloMedida" EntitySet="ArticuloMedida" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticuloMedidaPosicion_ArticuloMedida" Association="Self.FK_ArticuloMedidaPosicion_ArticuloMedida">
+      <End Role="ArticuloMedida" EntitySet="ArticuloMedida" />
+      <End Role="ArticuloMedidaPosicion" EntitySet="ArticuloMedidaPosicion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movimiento_ArticuloMedida" Association="Self.FK_Movimiento_ArticuloMedida">
+      <End Role="ArticuloMedida" EntitySet="ArticuloMedida" />
+      <End Role="Movimiento" EntitySet="Movimiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProveedorArticulo_ArticuloMedida" Association="Self.FK_ProveedorArticulo_ArticuloMedida">
+      <End Role="ArticuloMedida" EntitySet="ArticuloMedida" />
+      <End Role="ProveedorArticulo" EntitySet="ProveedorArticulo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VentaArticulo_ArticuloMedida" Association="Self.FK_VentaArticulo_ArticuloMedida">
+      <End Role="ArticuloMedida" EntitySet="ArticuloMedida" />
+      <End Role="VentaArticulo" EntitySet="VentaArticulo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ArticuloMedidaPosicion_Posicion" Association="Self.FK_ArticuloMedidaPosicion_Posicion">
+      <End Role="Posicion" EntitySet="Posicion" />
+      <End Role="ArticuloMedidaPosicion" EntitySet="ArticuloMedidaPosicion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoriaRelacion_CatergoriaHijo" Association="Self.FK_CategoriaRelacion_CatergoriaHijo">
+      <End Role="Catergoria" EntitySet="Catergoria" />
+      <End Role="CategoriaRelacion" EntitySet="CategoriaRelacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoriaRelacion_CatergoriaPadre" Association="Self.FK_CategoriaRelacion_CatergoriaPadre">
+      <End Role="Catergoria" EntitySet="Catergoria" />
+      <End Role="CategoriaRelacion" EntitySet="CategoriaRelacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Venta_Cliente" Association="Self.FK_Venta_Cliente">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Venta" EntitySet="Venta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProveedorArticulo_FormaPago" Association="Self.FK_ProveedorArticulo_FormaPago">
+      <End Role="FormaPago" EntitySet="FormaPago" />
+      <End Role="ProveedorArticulo" EntitySet="ProveedorArticulo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Venta_FormaPago" Association="Self.FK_Venta_FormaPago">
+      <End Role="FormaPago" EntitySet="FormaPago" />
+      <End Role="Venta" EntitySet="Venta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Medida_TipoMedida" Association="Self.FK_Medida_TipoMedida">
+      <End Role="TipoMedida" EntitySet="TipoMedida" />
+      <End Role="Medida" EntitySet="Medida" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movimiento_Posicion" Association="Self.FK_Movimiento_Posicion">
+      <End Role="Posicion" EntitySet="Posicion" />
+      <End Role="Movimiento" EntitySet="Movimiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movimiento_PosicionOrigen" Association="Self.FK_Movimiento_PosicionOrigen">
+      <End Role="Posicion" EntitySet="Posicion" />
+      <End Role="Movimiento" EntitySet="Movimiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movimiento_ProveedorDestino" Association="Self.FK_Movimiento_ProveedorDestino">
+      <End Role="Proveedor" EntitySet="Proveedor" />
+      <End Role="Movimiento" EntitySet="Movimiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movimiento_ProveedorOrigen" Association="Self.FK_Movimiento_ProveedorOrigen">
+      <End Role="Proveedor" EntitySet="Proveedor" />
+      <End Role="Movimiento" EntitySet="Movimiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movimiento_TipoMovimiento" Association="Self.FK_Movimiento_TipoMovimiento">
+      <End Role="TipoMovimiento" EntitySet="TipoMovimiento" />
+      <End Role="Movimiento" EntitySet="Movimiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movimiento_VentaDestino" Association="Self.FK_Movimiento_VentaDestino">
+      <End Role="Venta" EntitySet="Venta" />
+      <End Role="Movimiento" EntitySet="Movimiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movimiento_VentaOrigen" Association="Self.FK_Movimiento_VentaOrigen">
+      <End Role="Venta" EntitySet="Venta" />
+      <End Role="Movimiento" EntitySet="Movimiento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProveedorArticulo_Proveedor" Association="Self.FK_ProveedorArticulo_Proveedor">
+      <End Role="Proveedor" EntitySet="Proveedor" />
+      <End Role="ProveedorArticulo" EntitySet="ProveedorArticulo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VentaArticulo_Venta" Association="Self.FK_VentaArticulo_Venta">
+      <End Role="Venta" EntitySet="Venta" />
+      <End Role="VentaArticulo" EntitySet="VentaArticulo" />
+    </AssociationSet>
+    <EntitySet Name="sysdiagrams" EntityType="GestionStock.Data.EF.sysdiagrams" />
+  </EntityContainer>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+</Schema>
